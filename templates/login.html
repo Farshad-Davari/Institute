@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه ورود به پنل ادمین سایت آکادمی زبان کاظمی</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+    <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+</head>
+
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-signin {
+        width: 100%;
+        max-width: 330px;
+        padding: 15px;
+        margin: auto;
+    }
+</style>
+
+<body>
+
+    <main class="form-signin text-center">
+        <form method="post" class="p-4 border rounded shadow">
+            <p class="mb-3 fw-bold shabnam">صفحه ورود به پنل ادمین</p>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Username" name="username">
+                <label for="floatingInput" class="shabnam">نام کاربری</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+                <label for="floatingPassword" class="shabnam">رمز عبور</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary shabnam" type="submit">ورود</button>
+        </form>
+    </main>
+
+    
+</body>
+
+</html>

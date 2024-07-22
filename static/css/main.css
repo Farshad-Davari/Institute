@@ -1,0 +1,126 @@
+body {
+    direction: rtl;
+}
+
+#top-info {
+    background-color: #A0DEFF;
+}
+
+@font-face {
+    font-family: shabnam;
+    src: url('../fonts/Shabnam.ttf');
+}
+
+.shabnam {
+    font-family: shabnam;
+}
+
+.navbar-light .navbar-toggler {
+    color: #fff;
+    border-color: #007bff;
+    background-color: #007bff;
+}
+
+#menu {
+    border: 1px solid #A0DEFF;
+    border-radius: 20px;
+    background-color: #A0DEFF;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 380px) {
+    #slider {
+        display: none !important;
+    }
+}
+
+#title-1 {
+    background-color: #CAF4FF;
+    border-radius: 20px;
+}
+
+#shadow {
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(160, 159, 159, 0.3),
+        /* Horizontal shadow */
+        0 0 10px rgba(160, 159, 159, 0.3),
+        /* Vertical shadow */
+        0 0 5px rgba(160, 159, 159, 0.3),
+        /* Blur radius */
+        0 0 5px rgba(160, 159, 159, 0.3);
+    /* Spread radius */
+}
+
+.two {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(160, 159, 159, 0.3),
+        /* Horizontal shadow */
+        0 0 10px rgba(160, 159, 159, 0.3),
+        /* Vertical shadow */
+        0 0 5px rgba(160, 159, 159, 0.3),
+        /* Blur radius */
+        0 0 5px rgba(160, 159, 159, 0.3);
+    /* Spread radius */
+}
+
+.register-banner-style {
+    background-color: #2377FC;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-size: 20px;
+}
+
+.form-control::placeholder {
+    text-align: center;
+}
+
+.form-select {
+    text-align: center;
+    text-align-last: center;
+}
+
+.form-select option {
+    text-align: left;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.video-container {
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+video {
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+.panel-admin-bg {
+    background-color: #00224D;
+    color: #fff;
+}
+
+.panel-admin-link {
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+    border-radius: 100px;
+}

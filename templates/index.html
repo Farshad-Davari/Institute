@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آکادمی زبان کاظمی</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'bootstrap.min.css') }}">
+    <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+</head>
+
+<body>
+
+    <!-- Menu Section -->
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container shabnam fw-bold p-3" id="menu">
+            <a class="navbar-brand site-name" href="{{ url_for('index') }}">
+                آکادمی زبان کاظمی
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item me-3">
+                        <a class="nav-link site-name" href="{{ url_for('index') }}">خانه</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link site-name div-1">ثبت نام</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link site-name div-2">درباره ما</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <p class="m-0">
+                        شماره تماس: 09121115643
+                    </p>
+                </div>
+            </div>
+            <button class="navbar-toggler navbar-light" id="toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Slider Section -->
+    <div class="container p-0">
+        <div class="image-container m-4">
+            <img src="{{ url_for('static', filename = 'img/slider.svg') }}" alt="Centered Image" class="centered-image"
+                id="slider">
+        </div>
+    </div>
+
+
+    <div class="row d-flex justify-content-center target-2">
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-10 p-2 mt-4 mb-0" id="title-1">
+            <p class="text-center fs-5 shabnam fw-bold m-0">
+                به آکادمی زبان کاظمی خوش آمدید!
+            </p>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-around">
+            <div
+                class="two col-xxl-3 col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 my-xxl-0 my-xl-0 my-lg-4 my-md-4 my-sm-4 my-4 shabnam">
+                <h5 class="fw-bold text-center mt-4">اساتید حرفه‌ای</h5>
+                <p class="fw-bold text-center mt-4" style="color: rgb(90, 90, 90);">
+                    اساتید ما با مدارک بالا و تسلط کامل آماده آموزش به شما عزیزان هستند.
+                </p>
+                <div class="d-flex justify-content-center mt-5 my-3">
+                    <button class="btn btn-primary">ثبت نام</button>
+                </div>
+            </div>
+            <div
+                class="two col-xxl-3 col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 my-xxl-0 my-xl-0 my-lg-4 my-md-4 my-sm-4 my-4 shabnam">
+                <h5 class="fw-bold text-center mt-4">تعیین سطح رایگان</h5>
+                <p class="fw-bold text-center mt-4" style="color: rgb(90, 90, 90);">
+                    قبل از شروع آموزش بصورت کاملا رایگان از شما آزمون تعیین سطح خواهیم گرفت.
+                </p>
+                <div class="d-flex justify-content-center mt-5 my-3">
+                    <button class="btn btn-primary">ثبت نام</button>
+                </div>
+            </div>
+            <div
+                class="two col-xxl-3 col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 my-xxl-0 my-xl-0 my-lg-4 my-md-4 my-sm-4 my-4 shabnam">
+                <h5 class="fw-bold text-center mt-4">آموزش تخصصی</h5>
+                <p class="fw-bold text-center mt-4" style="color: rgb(90, 90, 90);">
+                    متد آموزشی ما کاملا مدرن و به صورت کاملا تخصصی طراحی شده است.
+                </p>
+                <div class="d-flex justify-content-center mt-5 my-3">
+                    <button class="btn btn-primary">ثبت نام</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center mt-5 mb-0">
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-10 p-2 mb-0" id="title-1">
+            <p class="text-center fs-5 shabnam fw-bold m-0">
+                همین الان ثبت نام کنید!
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5 justify-content-center">
+            <div class="shabnam col-xxl-5 col-xl-6 col-lg-6 col-md-8 col-sm-8 col-8 fw-bold two text-center m-0 p-4">
+                <div class="video-container mb-4">
+                    <video controls>
+                        <source src="path/to/your/video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                        {% with messages = get_flashed_messages(with_categories=true) %}
+                            {% if messages %}
+                                {% for category, message in messages %}
+                                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        {% endwith %}        
+                        <form method="post">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="نام" aria-label="First Name" name="first_name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="نام خانوادگی"
+                                    aria-label="Last Name" name="last_name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="number" class="form-control" placeholder="سن" aria-label="Age" name="age">
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select" aria-label="ترم انتخابی" name="semester">
+                                    <option selected>ترم انتخابی</option>
+                                    <option value="1">ترم اول</option>
+                                    <option value="2">ترم دوم</option>
+                                    <option value="3">ترم سوم</option>
+                                    <option value="4">ترم چهارم</option>
+                                </select>
+                            </div>
+                            <div class="text-center target-1">
+                                <button type="submit" class="btn btn-primary">ارسال و ثبت نام</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container shabnam fw-bold mt-4 mb-2" id="menu">
+        <div class="row d-flex justify-content-center">
+            <p class="text-center m-0 p-2">
+                ما را در اینستاگرام دنبال کنید: fatemeh.kazemii1
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

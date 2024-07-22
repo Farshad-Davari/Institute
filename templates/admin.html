@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل ادمین سایت آکادمی زبان کاظمی</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'bootstrap.min.css') }}">
+    <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid panel-admin-bg">
+        <div class="col-12 d-flex justify-content-between p-2">
+            <p class="shabnam fw-bold p-2 m-2">پنل ادمین سایت آکادمی زبان کاظمی</p>
+            <a href="{{ url_for('index') }}" class="panel-admin-link m-2 p-2 shabnam fw-bold">ورود به سایت</a>
+        </div>
+    </div>
+
+    <div class="container bg-light border-opacity-75 shadow mt-5">
+        <div class="col-12 d-flex justify-content-center">
+            <p class="text-center shabnam fw-bold mt-3">اطلاعات کاربران</p>
+            <table class="m-4 shabnam">
+                <tr>
+                    <th>نام</th>
+                    <th>نام خانوادگی</th>
+                    <th>ترم انتخابی</th>
+                    <th>سن</th>
+                </tr>
+                {% for student in students %}
+                <tr>
+                    <td>{{ student.first_name }}</td>
+                    <td>{{ student.last_name }}</td>
+                    <td>{{ student.semester }}</td>
+                    <td>{{ student.age }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
